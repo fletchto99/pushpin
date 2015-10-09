@@ -16,7 +16,7 @@
 
     </head>
     <body>
-        <h1 class='title'>Pushpin</h1>
+        <img id="banner" src="resources/images/logo.png"/>
 
         <div id='AccountCreationContainer' class='item-container'>
             <div class='item-container-header'>Create Account</div>
@@ -38,22 +38,18 @@
             </div>
             <div class='item-container'>
                 <div class='button-container'>
-                    <input id='createaccount' type='button' class='item-button' value='Save'>
+                    <input id='CreateAccount' type='button' class='item-button' value='Save'>
                 </div>
             </div>
         </div>
 
         <div id='AccountCreatedContainer' class='item-container item-hidden'>
             <div class='item-container-header'>Thanks for using Pushpin</div>
-            <div class='button-container'>
-                <input id='deleteaccount' type='button' class='item-button' value='Save'>
-            </div>
         </div>
 
-        <div id='LoadingContainer' class='item-container item-hidden'>
+        <div id='LoadingContainer' class='item-container'>
             <div class='item-container-header'>Pushpin is loading...</div>
-            <p id="LoadingError" class="item-hidden">
-                There was an error communicating with the server. Please try again later.
+            <p id="ErrorMessage" class="item-hidden">
             </p>
         </div>
     </body>
