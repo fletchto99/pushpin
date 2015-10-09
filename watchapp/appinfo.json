@@ -1,0 +1,31 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        "configurable"
+    ],
+    "companyName": "fletchto99@gmail.com",
+    "longName": "PushPin",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/pin.png",
+                "name": "IMAGE_PIN",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "PushPin",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "3f194751-dfaf-4126-8b07-7595c92f1204",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "hiddenApp": true,
+        "watchface": false
+    }
+}
