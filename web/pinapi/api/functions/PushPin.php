@@ -3,9 +3,8 @@
 class PushPin {
 
     function __construct($site, $pindata) {
-        $this->username = $username;
-        $this->password = $password;
-        $this->watchtoken = $watchtoken;
+        $this->site = $site;
+        $this->data = json_decode($pindata, true);
     }
 
     function execute() {
