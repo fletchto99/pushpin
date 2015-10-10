@@ -16,15 +16,15 @@
 
     </head>
     <body>
-        <img id="banner" src="resources/images/logo.png"/>
+        <img id="Banner" src="resources/images/logo.png"/>
 
-        <div id='AccountCreationContainer' class='item-container'>
+        <div id='AccountCreationContainer' class='item-container item-hidden'>
             <div class='item-container-header'>Create Account</div>
             <div class="item-container-content">
                 <label class="item">
                     Username
                     <div class="item-input-wrapper">
-                        <input type="text" class="item-input" id="username" placeholder="Username">
+                        <input type="text" class="item-input" id="Username" placeholder="Username">
                     </div>
                 </label>
             </div>
@@ -32,7 +32,7 @@
                 <label class="item">
                     Password
                     <div class="item-input-wrapper">
-                        <input type="password" class="item-input" id="password" placeholder="Password">
+                        <input type="password" class="item-input" id="Password" placeholder="Password">
                     </div>
                 </label>
             </div>
@@ -49,8 +49,10 @@
 
         <div id='LoadingContainer' class='item-container'>
             <div class='item-container-header'>Pushpin is loading...</div>
-            <p id="ErrorMessage" class="item-hidden">
-            </p>
+        </div>
+
+        <div id='ErrorContainer' class='item-container item-hidden'>
+            <div id="ErrorMessage" class='item-container-header'></div>
         </div>
     </body>
 </html>

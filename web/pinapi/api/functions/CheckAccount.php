@@ -7,6 +7,9 @@ class CheckAccount {
     }
 
     function execute() {
-        return ['AccountExists' => 'true'];
+        $db = DataBase::getInstance();
+        $count = $db->select("SELECT COUNT(*) FROM Users where User_Token=?", [$this->watchtoken]);
+        return ['AccountExists'=>$count[0][0] > 0];
+
     }
 }

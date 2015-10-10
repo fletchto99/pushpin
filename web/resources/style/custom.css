@@ -1,3 +1,11 @@
 .item-hidden {
     display: none;
 }
+
+#Banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto \9; /* ie8 */
+    margin: 15px auto;
+}

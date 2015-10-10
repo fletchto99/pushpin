@@ -6,6 +6,7 @@ if (!Configuration::MAINTENANCE_MODE || isset($_POST['developer'])) {
     require_once 'api/FunctionCallHandler.php';
     require_once 'api/Functions.php';
     require_once 'api/DataBase.php';
+    require_once 'vendor/TimelineAPI/Timeline.php';
     if (Configuration::MAINTENANCE_MODE && isset($_POST['developer'])) {
         ini_set('display_errors', 1);
     }
