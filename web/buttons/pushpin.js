@@ -35,7 +35,8 @@ PushPin.initilize = function(site) {
                     data: JSON.stringify({
                         method: 'push_pin',
                         site: site,
-                        data: JSON.stringify(button.pins)
+                        data: JSON.stringify(button.pins),
+                        timezone: new Date().getTimezoneOffset()
                     }),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",

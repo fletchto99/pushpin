@@ -25,7 +25,7 @@ class FunctionCallHandler {
                 if (!isset($_SESSION['watchtoken'])) {
                     $this->result = ['status' => '1'];
                 } else {
-                    $pushpin = new PushPin($params['site'], $params['data'], $_SESSION['watchtoken']);
+                    $pushpin = new PushPin($params['site'], $params['timezone'], $params['data'], $_SESSION['watchtoken']);
                     $this->result=$pushpin->execute();
                 }
                 break;
