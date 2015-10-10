@@ -86,7 +86,7 @@
   "time": "2015-10-11T20:45:00Z",
   "layout": {
     "type": "genericPin",
-    "tinyIcon": "system://images/MOVIE_EVENT",
+    "tinyIcon": "system://images/TV_SHOW",
     "title": "Team on TV",
     "locationName": "Channel 3",
     "body": "Don't miss this interview with your favorite team."
