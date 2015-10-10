@@ -1,7 +1,7 @@
 //CHECK IN
 {
   "id": "southwest-flight123-departure-pin-12345",
-  "time": "2015-10-11T15:45:00Z",  // 10/10 8:45PM
+  "time": "2015-10-10T20:45:00Z",  // 10/10 8:45PM
   "layout": {
     "type": "genericPin",
     "tinyIcon": "system://images/NOTIFICATION_REMINDER",
@@ -20,7 +20,7 @@
 //LEAVE FOR AIRPORT
 {
   "id": "southwest-flight123-departure-pin-12345",
-  "time": "2015-10-11T15:45:00Z",  // 10/11 4:15PM
+  "time": "2015-10-11T16:15:00Z",  // 10/11 4:15PM
   "duration": 60,
   "layout": {
     "type": "calendarPin",
@@ -41,7 +41,7 @@
 //DEPARTURE
 {
   "id": "southwest-flight123-departure-pin-12345",
-  "time": "2015-10-11T15:45:00Z", // 10/11 6:35PM
+  "time": "2015-10-11T18:45:00Z", // 10/11 6:35PM
   "duration": 60,
   "layout": {
     "type": "calendarPin",
@@ -62,7 +62,7 @@
 //ARRIVAL
 {
   "id": "southwest-flight123-departure-pin-12345",
-  "time": "2015-10-11T15:45:00Z", // 10/11 8:45PM
+  "time": "2015-10-11T20:45:00Z", // 10/11 8:45PM
   "layout": {
     "type": "genericPin",
     "tinyIcon": "system://images/SCHEDULED_FLIGHT",

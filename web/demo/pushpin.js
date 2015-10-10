@@ -41,7 +41,7 @@ PushPin.initilize = function(site) {
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (data) {
-                        if (data.status == 1 && !secondAttempt) {
+                        if (data.status == -1 && !secondAttempt) {
                             var child = window.open('https://fletchto99.com/other/pebble/pushpin/web/login.html',
                                                     '',
                                                     'resizable=no,toolbar=0,status=0,width=626,height=436');
@@ -53,14 +53,18 @@ PushPin.initilize = function(site) {
                                     push(true);
                                 }
                             }
-                        } else if (data.status == 1 && secondAttempt) {
+                        } else if (data.status == -1 && secondAttempt) {
                             button.classList.remove('pushpin-sending');
                             button.classList.add('pushpin-error');
                             button.innerText = 'Error. Retry?';
-                        } else {
+                        } else if (data.status == 200){
                             button.classList.remove('pushpin-sending');
                             button.classList.add('pushpin-check');
                             button.innerText = 'Sent to Pebble';
+                        } else {
+                            button.classList.remove('pushpin-sending');
+                            button.classList.add('pushpin-error');
+                            button.innerText = 'Error. Retry?';
                         }
 
 
