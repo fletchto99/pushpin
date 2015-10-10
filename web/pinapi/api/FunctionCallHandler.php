@@ -21,7 +21,6 @@ class FunctionCallHandler {
                 $this->result = $createAccount->execute();
                 break;
             case 'push_pin':
-
                 if (!isset($_SESSION['watchtoken'])) {
                     $this->result = ['status' => '1'];
                 } else {
