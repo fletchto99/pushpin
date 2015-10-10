@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="26px" viewBox="0 0 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>pebble_sending</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="PushPin-Buttons-Copy" sketch:type="MSArtboardGroup" transform="translate(-422.000000, -658.000000)">
+            <g id="Rectangle-1-+-Push-to-Pebble-+-plane-Copy-4" sketch:type="MSLayerGroup" transform="translate(411.000000, 651.000000)">
+                <g id="pebble_sending" transform="translate(12.000000, 8.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-71" stroke="#000000" stroke-width="2" fill="#FFFFFF" x="4" y="0" width="6" height="24" rx="1"></rect>
+                    <circle id="Oval-1-Copy" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="7" cy="12" r="7"></circle>
+                    
+                      <g id="pebble_sending_spinner" transform="translate(7, 12)">
+                          
+                            <g id="spinner">
+                                <path d="M3.04565099,1.50912024 C1.82491818,2.19400782 1,3.50066893 1,5 C1,7.209139 2.790861,9 5,9 C7.209139,9 9,7.209139 9,5 C9,3.51851461 8.19460201,2.22513999 6.99776911,1.53383924" id="Oval-1-Copy-2" stroke="#000000" stroke-width="2"  transform="translate(-5, -5)"></path>
+                                
+                                <animateTransform attributeName="transform" attributeType="XML"
+                                           type="rotate" from="0" to="360"
+                                           begin="0s" dur="1.5s" repeatCount="indefinite" />
+                                
+                            </g>
+                            
+                      </g>
+                    
+                    
+                    <path id="Path-83" stroke="#979797" d=""></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -47,7 +47,7 @@ p {
   box-shadow: 0px 3px 5px rgba(0,0,0,.3);
 }
 
-.pushpin-button.pushpin-flight a {
+.pushpin-button.pushpin-flight {
   background-color: #00AAFF;
 }
 
@@ -70,4 +70,18 @@ p {
 .pushpin-button.pushpin-check {
   background-image: url(../images/pebble_check.svg);
   background-color: #00AA54;
+}
+
+.pushpin-button.pushpin-error {
+  background-image: url(../images/pebble_error.svg);
+  background-color: #FF0000;
+}
+
+.pushpin-button.pushpin-sending {
+  background-image: url(../images/pebble_sending.svg);
+  background-color: #999;
+}
+
+.pushpin-button.pushpin-sending:hover {
+  box-shadow: none;
 }
