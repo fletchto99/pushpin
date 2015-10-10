@@ -44,7 +44,7 @@ PushPin.initilize = function(site) {
                         if (data.status == -1 && !secondAttempt) {
                             var child = window.open('https://fletchto99.com/other/pebble/pushpin/web/login.html',
                                                     '',
-                                                    'resizable=no,toolbar=0,status=0,width=626,height=436');
+                                                    'resizable=no,toolbar=0,status=0,width=450,height=600');
                             var timer = setInterval(checkChild, 500);
 
                             function checkChild() {
