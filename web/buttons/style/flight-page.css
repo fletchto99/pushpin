@@ -1,0 +1,26 @@
+body {
+  background: #CCC;
+  padding: 100px 0 0 0;
+}
+
+.wrapper {
+  padding: 40px;
+  background: #FFF;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.3);
+}
+
+h2 {
+  padding: 20px 0 10px 0;
+}
+
+p {
+  padding: 0 0 10px 0;
+}
+
+p.actions {
+  padding: 20px 0 0 0;
+}
+
+hr {
+  margin: 10px 0 10px 0;
+}
