@@ -37,6 +37,23 @@ class Timeline {
         return self::sendRequest($requestURL, 'PUT', $headers, $pin->getData());
     }
 
+    static function pushRawPin($userToken, $pin) {
+        if (!is_string($userToken)) {
+            throw new Exception('Usertoken not of type string');
+        }
+
+        if (!is_string($pin)) {
+            throw new Exception('Raw data must be a pin');
+        }
+
+        $pinObject = json_decode($pin, true);
+
+        $headers = ['Content-Type: application/json', 'X-User-Token: ' . $userToken];
+        $requestURL = self::$TIMELINE_API . self::$USER_PIN_API . $pinObject['id'];
+
+        return self::sendRequest($requestURL, 'PUT', $headers, $pinObject);
+    }
+
     static function pushSharedPin($key, Array $topics, Pin $pin) {
         if ($key == null || $key === '') {
             throw new Exception('Timeline API key invalid');

@@ -2,23 +2,23 @@
 
 class PushPin {
 
-    function __construct($site, $pindata) {
+    function __construct($site, $pindata, $watchtoken) {
         $this->site = $site;
-        $this->data = json_decode($pindata, true);
+        $this->data = $pindata;
+        $this->watchtoken = $watchtoken;
     }
 
     function execute() {
-        if (!isset($this->username) || strlen($this->username) < 1 | !isset($this->password) || strlen($this->password) < 1 || !isset($this->watchtoken) || strlen($this->watchtoken) < 1) {
-            return ['Error' => 'invalid_input'];
+        $pins = json_decode($this->data, true);
+        if(is_array($pins)) {
+            foreach($pins as $pin) {
+                $pin['id'] = $this->site . '-' . $pin['id'];
+                Functions::pushRawPin($this->watchtoken, $pin);
+            }
+            return ['multiple' => true];
+        } else {
+            $pins['id'] = $this->site . '-' . $pins['id'];
+            return Functions::pushRawPin($this->watchtoken, $pins);
         }
-        $db = DataBase::getInstance();
-        try {
-            $db->insert("INSERT INTO Users(Username, Password, User_Token) values (?,?,?)", [$this->username, sha1($this->password), $this->watchtoken]);
-            Functions::pushWelcomePin($this->watchtoken, $this->username);
-            return ['AccountCreated'=>true];
-        } catch(Exception $e) {
-            return ['Error' => 'account_exists'];
-        }
-
     }
 }

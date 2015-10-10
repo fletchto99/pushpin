@@ -35,7 +35,7 @@ PushPin.initilize = function(site) {
                     data: JSON.stringify({
                         method: 'push_pin',
                         site: site,
-                        data: button.pins
+                        data: JSON.stringify(button.pins)
                     }),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",

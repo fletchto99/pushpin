@@ -30,4 +30,8 @@ class Functions {
         Timeline::pushPin($watchtoken, $pin);
     }
 
+    public static function pushRawPin($watchtoken, $pin) {
+        return Timeline::pushRawPin($watchtoken, json_encode($pin));
+    }
+
 }
