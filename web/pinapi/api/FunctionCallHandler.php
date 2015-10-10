@@ -11,6 +11,7 @@ class FunctionCallHandler {
 
     function execute($method, $params) {
         session_start();
+        date_default_timezone_set('UTC');
         switch ($method) {
             case 'check_account':
                 $checkaccount = new CheckAccount($params['watchtoken']);

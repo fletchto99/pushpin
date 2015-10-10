@@ -24,7 +24,7 @@ class Functions {
         $createNotification = new PinNotification($createLayout);
 
         //Pin
-        $pin = new Pin('welcome-'.$watchtoken, new DateTime('now'), $pinLayout, null, $createNotification, null);
+        $pin = new Pin('welcome-'.$watchtoken, date_add(new DateTime('now'), new DateInterval('PT5M')), $pinLayout, null, $createNotification, null);
 
         //Push the pin
         Timeline::pushPin($watchtoken, $pin);
