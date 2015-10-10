@@ -2,32 +2,52 @@
 <html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
   <title>PushPin</title>
-  <meta name="keywords" content="Subscribe to push pins to your Pebble.">	
+  <meta name="keywords" content="Subscribe to push pins to your Pebble.">
   <meta name="description" content="PushPin">
   <link href="style/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="pushpin.js"></script>
+  <script>
+    $(function() {
+      PushPin.initilize('demo');
+      PushPin.addPin('series1', {
+        id: 'flight-1',
+        type: ''
+      });
+      PushPin.addPin('series1', {
+        id: 'flight-2',
+        type: 'flight'
+      });
+
+      PushPin.addPin('series2', {
+        id: 'music-1',
+        type: 'music'
+      });
+    });
+  </script>
 </head>
 <body>
 
 <div class="wrapper">
   <h1>PushPin</h1>
   <p>Subscribe to push pins to your Pebble.</p>
-  
-  <p><span href="#" data-pin-id="980qwnr8wr98" class="pushpin-button pushpin-flight">Push to Pebble</span></p>
-  
-  <p><span href="#" data-pin-id="98dad9un2kj3" class="pushpin-button pushpin-music">Push to Pebble</span></p>
-  
-  <p><span href="#" data-pin-id="jn9hrv9u084c" class="pushpin-button pushpin-sports">Push to Pebble</span></p>
-  
-  <p><span href="#" data-pin-id="84vr981hdjnx" class="pushpin-button pushpin-conference">Push to Pebble</span></p>
-  
-  <p><span href="#" data-pin-id="980qwnr8wr98" class="pushpin-button pushpin-reminder">Push to Pebble</span></p>
-  
-  <p><span href="#" data-pin-id="980qwnr8wr98" class="pushpin-button pushpin-flight pushpin-check">On your Pebble</span></p>
-  
-  <p><span href="#" data-pin-id="980qwnr8wr98" class="pushpin-button pushpin-flight pushpin-error">Error. Retry?</span></p>
-  
-  <p><span href="#" data-pin-id="980qwnr8wr98" class="pushpin-button pushpin-flight pushpin-sending">Sending...</span></p>
-  
+
+  <p><span href="#" id="series1" class="pushpin-button pushpin-flight">Push to Pebble</span></p>
+
+  <p><span href="#" id="series2" class="pushpin-button pushpin-music">Push to Pebble</span></p>
+
+  <p><span href="#" id="series3" class="pushpin-button pushpin-sports">Push to Pebble</span></p>
+
+  <p><span href="#" id="series4" class="pushpin-button pushpin-conference">Push to Pebble</span></p>
+
+  <p><span href="#" id="series5" class="pushpin-button pushpin-reminder">Push to Pebble</span></p>
+
+  <p><span href="#" id="series6" class="pushpin-button pushpin-flight pushpin-check">On your Pebble</span></p>
+
+  <p><span href="#" id="series7" class="pushpin-button pushpin-flight pushpin-error">Error. Retry?</span></p>
+
+  <p><span href="#" id="series8" class="pushpin-button pushpin-flight pushpin-sending">Sending...</span></p>
+
 </div>
 
 </body>
