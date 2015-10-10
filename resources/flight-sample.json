@@ -1,0 +1,85 @@
+//CHECK IN
+{
+  "id": "southwest-flight123-departure-pin-12345",
+  "time": "2015-10-11T15:45:00Z",
+  "layout": {
+    "type": "genericPin",
+    "tinyIcon": "system://images/NOTIFICATION_REMINDER",
+    "title": "Check in for your flight",
+    "body": "Southwest flight 123 to San Francisco."
+  },
+  "actions": [
+    {
+      "title": "Check In",
+      "type": "openWatchApp",
+      "launchCode": 15
+    }
+  ]
+}
+
+//LEAVE FOR AIRPORT
+{
+  "id": "southwest-flight123-departure-pin-12345",
+  "time": "2015-10-11T15:45:00Z",
+  "duration": 60,
+  "layout": {
+    "type": "calendarPin",
+    "title": "Leave for Airport",
+    "tinyIcon": "system://images/CAR_RENTAL",
+    "locationName": "San Francisco Airport",
+    "body": "It will take you about 60 minutes to get to the airport."
+  },
+  "actions": [
+    {
+      "title": "Call an Uber",
+      "type": "openWatchApp",
+      "launchCode": 15
+    }
+  ]
+}
+
+//DEPARTURE
+{
+  "id": "southwest-flight123-departure-pin-12345",
+  "time": "2015-10-11T15:45:00Z",
+  "duration": 60,
+  "layout": {
+    "type": "calendarPin",
+    "tinyIcon": "system://images/SCHEDULED_FLIGHT",
+    "title": "Flight Leaves",
+    "locationName": "Gate 1",
+    "body": "You're in boarding group C for Southwest flight 123 to San Francisco."
+  },
+  "actions": [
+    {
+      "title": "Upgrade Seat",
+      "type": "openWatchApp",
+      "launchCode": 15
+    }
+  ]
+}
+  
+//ARRIVAL
+{
+  "id": "southwest-flight123-departure-pin-12345",
+  "time": "2015-10-11T15:45:00Z",
+  "layout": {
+    "type": "genericPin",
+    "tinyIcon": "system://images/SCHEDULED_FLIGHT",
+    "title": "Flight Lands",
+    "locationName": "Gate 2",
+    "body": "Southwest flight 123 arrives in San Francisco. You can get your luggage at claim 7."
+  },
+"actions": [
+  {
+    "title": "Call for Ride",
+    "type": "openWatchApp",
+    "launchCode": 15
+  },
+  {
+    "title": "Call an Uber",
+    "type": "openWatchApp",
+    "launchCode": 22
+  }
+]
+}
