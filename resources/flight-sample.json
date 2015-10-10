@@ -6,7 +6,7 @@
     "type": "genericPin",
     "tinyIcon": "system://images/NOTIFICATION_REMINDER",
     "title": "Check in for your flight",
-    "body": "Southwest flight 123 to San Francisco."
+    "body": "Pebble flight 123 to Denver."
   },
   "actions": [
     {
@@ -24,7 +24,7 @@
   "duration": 60,
   "layout": {
     "type": "calendarPin",
-    "title": "Leave for Airport",
+    "title": "Head to Airport",
     "tinyIcon": "system://images/CAR_RENTAL",
     "locationName": "San Francisco Airport",
     "body": "It will take you about 60 minutes to get to the airport."
@@ -48,7 +48,7 @@
     "tinyIcon": "system://images/SCHEDULED_FLIGHT",
     "title": "Flight Leaves",
     "locationName": "Gate 1",
-    "body": "You're in boarding group C for Southwest flight 123 to San Francisco."
+    "body": "You're in boarding group C for Pebble flight 123 to Denver."
   },
   "actions": [
     {
@@ -68,7 +68,7 @@
     "tinyIcon": "system://images/SCHEDULED_FLIGHT",
     "title": "Flight Lands",
     "locationName": "Gate 2",
-    "body": "Southwest flight 123 arrives in San Francisco. You can get your luggage at claim 7."
+    "body": "Pebble flight 123 arrives in Denver. You can get your luggage at baggage claim 7."
   },
 "actions": [
   {
