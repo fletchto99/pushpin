@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <title>PushPin</title>
+  <meta name="keywords" content="Subscribe to push pins to your Pebble.">
+  <meta name="description" content="PushPin">
+  <link href="style/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="style/sports-page.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="pushpin.js"></script>
+  <script>
+    $(function() {
+      PushPin.initilize('sports');
+      PushPin.addPin('series3', {
+        "id": "pebble-sportsball123-tickets-pin-12345",
+        "time": "2015-10-10T20:45:00Z",
+        "layout": {
+          "type": "genericPin",
+          "tinyIcon": "system://images/NOTIFICATION_FLAG",
+          "title": "Tickets on Sale",
+          "locationName": "Team Website",
+          "body": "Tickets for the upcoming Pebble Sportsball match go on sale."
+        },
+        "actions": [
+          {
+            "title": "Purchase Tickets",
+            "type": "openWatchApp",
+            "launchCode": 15
+          },
+          {
+            "title": "Add to Calendar",
+            "type": "openWatchApp",
+            "launchCode": 22
+          }
+        ]
+      });
+
+      PushPin.addPin('series3', {
+        "id": "pebble-sportsball123-travel-pin-12345",
+        "time": "2015-10-11T13:45:00Z",
+        "duration": 60,
+        "layout": {
+          "type": "calendarPin",
+          "title": "Head to Stadium",
+          "tinyIcon": "system://images/CAR_RENTAL",
+          "locationName": "San Francisco Stadium",
+          "body": "It will take you about 60 minutes to get to the stadium."
+        },
+        "actions": [
+          {
+            "title": "Call an Uber",
+            "type": "openWatchApp",
+            "launchCode": 15
+          },
+          {
+            "title": "On my way!",
+            "type": "openWatchApp",
+            "launchCode": 15
+          }
+        ]
+      });
+
+      PushPin.addPin('series3', {
+        "id": "pebble-sportsball123-upcoming-pin-12345",
+        "time": "2015-10-11T14:45:00Z",
+        "duration": 90,
+        "layout": {
+          "type": "calendarPin",
+          "title": "Pebble Match",
+          "tinyIcon": "system://images/SOCCER_GAME",
+          "locationName": "San Francisco Field",
+          "body": "Pebble will take on the competition of the greatest match in sportsball history."
+        },
+        "actions": [
+          {
+            "title": "Purchase Tickets",
+            "type": "openWatchApp",
+            "launchCode": 15
+          },
+          {
+            "title": "Record the Match",
+            "type": "openWatchApp",
+            "launchCode": 15
+          },
+          {
+            "title": "Remind Me",
+            "type": "openWatchApp",
+            "launchCode": 15
+          }
+        ]
+      });
+
+      PushPin.addPin('series3', {
+        "id": "pebble-sportsball123-appearance-pin-12345",
+        "time": "2015-10-11T20:45:00Z",
+        "layout": {
+          "type": "genericPin",
+          "tinyIcon": "system://images/TV_SHOW",
+          "title": "Team on TV",
+          "locationName": "Channel 3",
+          "body": "Don't miss this interview with your favorite team."
+        },
+        "actions": [
+          {
+            "title": "Set to Record",
+            "type": "openWatchApp",
+            "launchCode": 15
+          },
+          {
+            "title": "Change Channel",
+            "type": "openWatchApp",
+            "launchCode": 22
+          }
+        ]
+      });
+    });
+  </script>
+</head>
+<body>
+
+<div id="sports-page" class="wrapper">
+  <h1>Pebble Sportsball Team</h1>
+  <p>Thanks for visiting our sportsball team page.</p>
+  
+  <h2>Next Match this Tuesday!</h2>
+  <p>Tickets go on sale tomorrow! Don't miss the live interview after the match and a chance to win a signed jersey.</p>
+  <p><hr/></p>
+  <p><strong>Want to know about schedule updates, team appearances, tickets sales, and more?</strong></p>
+
+  <p class="actions"><span id="series3" class="pushpin-button pushpin-sports">Push to Pebble</span></p>
+
+</div>
+
+</body>
+</html>
