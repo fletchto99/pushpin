@@ -1,0 +1,20 @@
+<?php
+
+class Configuration {
+
+    //DB connection information
+    CONST DATABASE_HOST = '<HOST>';
+    CONST DATABASE_NAME = '<DATABASE>';
+    CONST DATABASE_USER = '<USER>';
+    CONST DATABASE_PASSWORD = '<PASSWORD>';
+
+    //Timeline settings
+    CONST TIMELINE_API_KEY = '<API KEY>';
+
+    //Developer settings
+    CONST DEBUG              = false;
+    CONST DEVELOPER_PASSWORD = '<PASSWORD>';
+
+    //Other settings
+    CONST MAINTENANCE_MODE = false;
+}
