@@ -16,7 +16,7 @@ class PushPin {
 
     function execute() {
         $pins = json_decode($this->data, true);
-        $notifLayout = new PinLayout(PinLayoutType::GENERIC_NOTIFICATION, 'Pushpin', null, null, 'Your pins from ' . $this->site . ' have been added.', PinIcon::NOTIFICATION_FLAG);
+        $notifLayout = new PinLayout(PinLayoutType::GENERIC_NOTIFICATION, 'Pushpin', null, null, (is_array($pins) ? sizeof($pins) . ' pins' : 'A pin') . ' from ' . $this->site . ' '.(is_array($pins) ? 'have' : 'has').' been added to your timeline.', PinIcon::NOTIFICATION_FLAG);
         $notificationData = new PinNotification($notifLayout);
         if(is_array($pins)) {
             $result = 200;
