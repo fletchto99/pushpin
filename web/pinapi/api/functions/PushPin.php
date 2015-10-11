@@ -22,7 +22,7 @@ class PushPin {
             $result = 200;
             $added = false;
             foreach($pins as $pin) {
-                $pin['id'] = $this->site . '-abcd' . $pin['id'];
+                $pin['id'] = $this->site . '-' . $pin['id'];
                 if (!$added) {
                     $pin['createNotification'] = $notificationData->getData();
                     $added=true;
