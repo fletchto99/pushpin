@@ -8,8 +8,8 @@
     "resources": {
         "media": [
             {
-                "file": "images/pin.png",
-                "name": "IMAGE_PIN",
+                "file": "images/pushpin.png",
+                "name": "IMAGE_PUSHPIN",
                 "type": "bitmap"
             }
         ]
