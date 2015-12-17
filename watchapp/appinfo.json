@@ -3,15 +3,14 @@
     "capabilities": [
         "configurable"
     ],
-    "companyName": "fletchto99@gmail.com",
+    "companyName": "Matt Langlois",
     "longName": "PushPin",
-    "projectType": "native",
     "resources": {
         "media": [
             {
                 "file": "images/pin.png",
                 "name": "IMAGE_PIN",
-                "type": "png"
+                "type": "bitmap"
             }
         ]
     },
